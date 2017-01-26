@@ -1,0 +1,32 @@
+<div id="usernameDiv">
+    Username: <input id="username" type="text"></input>
+    
+    <button id="play">Play</button>
+</div>
+
+<div id="gameDiv" style="display: none;">
+    <div id="game" style="position: absolute; width: 1200px; height: 700px">
+        <canvas id="ctx" width="1200" height="700" style="position: absolute; border: 1px solid #000000;"></canvas>
+
+        <div id="ui" style="position: absolute; width: 1200px; height: 700px;">
+            <button onclick="changeMap()" style="position: absolute; bottom: 0px; left: 0px">Change Map</button>
+        </div>
+
+    </div>
+
+    <div id="belowGame" style="margin-top: 720px">
+        <div id="chat-text" style="width: 1200px; height: 100px; overflow-y: scroll">
+            <div>Write a message!</div>
+        </div>
+
+        <form id="chat-form">
+            <input id="chat-input" type="text" style="width: 1200px"></input>
+        </form>
+    </div>
+</div>
+
+<div id="highscoreDiv" style="width: 200px; height: 700px; overflow-y: scroll; display: none;">
+
+<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+<script src="./client/js/app.js">
+</script>
